@@ -1,0 +1,81 @@
+
+#interests{
+    height: 140vh;
+    width:auto;
+    margin:auto;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.interests-box{
+    width: 1440px;
+    height: 1200px;
+    background-color: #38A3A5;
+    box-shadow: 10px 10px 2px 1px #216D6F;
+    border-radius: 125px;
+}
+
+.interests-title{
+    color: white;
+    font-weight: bold;
+    font-size: 72px;
+    padding-top: 5%;
+    padding-right: 8%;
+    line-height: 18px;
+    text-align: right;
+}
+
+.clothes{
+    background-image: url("../../images/art-clothes.png");
+    background-size: contain;
+    padding-top: 5%;
+    width: 240px;
+    height: 345px;
+    border-radius: 5%;
+    display: flex;
+}
+
+.girl{
+    background-image: url("../../images/art-girl.png");
+    background-size: contain;
+    padding-top: 5%;
+    width: 258px;
+    height: 373px;
+    border-radius: 5%;
+    display: flex;
+}
+
+.row1{
+    margin: 2% 0% 2% 5%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.row2{
+    margin: 0% 0% 5% 5%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+.interest-name{
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 2%;
+    padding-left: 5%;
+    color: #BAFBFC;
+}
+
+.interest-desc{
+    font-size: 20px;
+    line-height: 1.5em;
+    font-weight: 200;
+    color: #BAFBFC;
+    padding: 3% 2% 5% 5%;
+    
+}
+
+
+

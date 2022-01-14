@@ -1,0 +1,60 @@
+#navbar{
+    height: 8vh;
+    width: 100%;
+    background-color: #60AF8D;
+    margin: auto;
+    position: fixed;
+    transition: all .7 ease-in;
+    z-index: 100;
+    display: flex;
+    padding-right: 5%;
+}
+
+/* .navbar-container{
+    padding-top: 1%;
+    height: 2%; 
+    display: flex;
+} */
+
+.logo img{
+    margin-top: 20%;
+    height: 5vh;
+    width: 5vh;
+}
+
+.menu{
+    padding-top: 0%;
+    padding-left: 15%;
+    width: 100vh;
+    display: flex;
+    text-align: center;
+}
+
+.menu ul{
+    margin-top: 3%;
+    text-align: center;
+    padding-left: 10%;
+}
+
+.menu li{
+    display: inline;
+    list-style: none;
+    
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding-right: 30%;
+    text-align: center;
+
+}
+
+.menu a:hover{
+    color: #29483A;
+    font-weight: bolder;
+    font-size: 18px;
+    font-weight: bold;
+}

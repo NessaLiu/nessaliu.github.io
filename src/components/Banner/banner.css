@@ -1,0 +1,30 @@
+#banner{
+    min-height: 70vh;
+    width: 100%;
+    position: relative;
+    margin-bottom: none;
+    padding-top: 3.75%;
+}
+
+.banner-container{
+    position: relative;
+}
+
+.banner-name{
+    font-size: 120px;
+    color: #29483A;
+    line-height: 2em;
+    padding: 5% 0% 5% 5%;
+    text-align: center;
+    position: relative;
+}
+
+.banner-bg{
+    background-image: url("../../images/banner-bg.svg"), url("../../images/banner-bg.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position:0% top, 1440px top;
+    width: 100%;
+    min-height: 200%;
+    position: absolute;
+
+}

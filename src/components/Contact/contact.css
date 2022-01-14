@@ -1,0 +1,46 @@
+#contact{
+    height: 50vh;
+    width:auto;
+    margin:auto;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-box{
+    width: 1440px;
+    height: 253px;
+    background-color:#22577A;
+    box-shadow: 10px 10px 2px 1px #193B51;
+    border-radius: 125px;
+}
+
+.contact-title{
+    color: white;
+    font-weight: bold;
+    padding-top: 4%;
+    font-size: 72px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.menu-bar{
+    display: block;
+    padding-top: 16px;
+    list-style: none;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 4%;
+}
+
+.icons{
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.icons img:hover{
+    background-color: #193B51;
+    border-radius: 6%;
+}
+
