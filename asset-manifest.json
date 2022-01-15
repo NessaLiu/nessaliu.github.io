@@ -1,11 +1,15 @@
 {
   "files": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "main.css": "/static/css/main.7fe8ab4b.css",
     "main.js": "/static/js/main.cb81cf7b.js",
     "static/js/787.1d583568.chunk.js": "/static/js/787.1d583568.chunk.js",
 =======
     "main.css": "/static/css/main.746a41c1.css",
+=======
+    "main.css": "/static/css/main.d8e94bbb.css",
+>>>>>>> f5fbbcf (Updates)
     "main.js": "/static/js/main.f3fa746e.js",
     "static/js/787.1d583568.chunk.js": "/static/js/787.1d583568.chunk.js",
     "static/media/resume.pdf": "/static/media/resume.028d7d1371c6822df4a3.pdf",
@@ -48,12 +52,12 @@
     "index.html": "/index.html",
     "static/media/github-icon.svg": "/static/media/github-icon.96a0f5d8b78335af59cee6f19129293c.svg",
     "static/media/mail-icon.svg": "/static/media/mail-icon.9aec8d6f01f92ec7eb076b2d06f056e7.svg",
-    "main.746a41c1.css.map": "/static/css/main.746a41c1.css.map",
+    "main.d8e94bbb.css.map": "/static/css/main.d8e94bbb.css.map",
     "main.f3fa746e.js.map": "/static/js/main.f3fa746e.js.map",
     "787.1d583568.chunk.js.map": "/static/js/787.1d583568.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.746a41c1.css",
+    "static/css/main.d8e94bbb.css",
     "static/js/main.f3fa746e.js"
 >>>>>>> ef4d0d2 (Updates)
   ]
