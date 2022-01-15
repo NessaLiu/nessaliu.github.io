@@ -10,11 +10,11 @@
     padding-right: 5%;
 }
 
-/* .navbar-container{
+.navbar-container{
     padding-top: 1%;
     height: 2%; 
-    display: flex;
-} */
+    /* display: flex; */
+}
 
 .logo img{
     margin-top: 20%;
@@ -24,7 +24,7 @@
 
 .menu{
     padding-top: 0%;
-    padding-left: 15%;
+    padding-left: 10%;
     width: 100vh;
     display: flex;
     text-align: center;

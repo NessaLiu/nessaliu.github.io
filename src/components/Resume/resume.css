@@ -7,8 +7,8 @@
 }
 
 .resume-box{
-    width: 1440px;
-    height: 275px;
+    width: 80vw;
+    height: 30vh;
     background-color: #C7F9CC;
     box-shadow: 10px 10px 2px 1px #82C391;
     border-radius: 125px;
@@ -46,6 +46,7 @@
     padding-top: none;
     border-radius: 5px;
     box-sizing: border-box;
+    position: relative;
     
 }
 

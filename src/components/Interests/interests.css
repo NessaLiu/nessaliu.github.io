@@ -9,8 +9,8 @@
 }
 
 .interests-box{
-    width: 1440px;
-    height: 1200px;
+    width: 80vw;
+    height: 100vh;
     background-color: #38A3A5;
     box-shadow: 10px 10px 2px 1px #216D6F;
     border-radius: 125px;
