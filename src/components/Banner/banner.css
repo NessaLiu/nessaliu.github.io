@@ -1,5 +1,6 @@
 #banner{
-    min-height: 70vh;
+    max-height: 50vh;
+    background-image: url("../../images/banner-bg.svg");
     width: 100%;
     position: relative;
     margin-bottom: none;
@@ -7,6 +8,7 @@
 }
 
 .banner-container{
+    width: 100%;
     position: relative;
 }
 
@@ -18,7 +20,7 @@
     text-align: center;
     position: relative;
 }
-
+/* 
 .banner-bg{
     background-image: url("../../images/banner-bg.svg"), url("../../images/banner-bg.svg");
     background-repeat: no-repeat, no-repeat;
@@ -27,4 +29,4 @@
     min-height: 200%;
     position: absolute;
 
-}
+} */

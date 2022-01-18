@@ -1,29 +1,36 @@
 import "./navbar.css"
-import Logo from "../../images/logo.png"
+// import Logo from "../../images/logo.png"
 
 const Navbar = () => {
     return (
-        <nav id="navbar">
-            
-            <div class="navbar-container">
-                
-                <div className="menu">
+        // <nav id="navbar"> 
 
-                    <div className="logo">
+            <div className="navbar">
+                
+                <div class="navbar-container flex">
+
+                    <h1 className="logo">V . L . </h1>
+
+                    {/* <div className="logo">
                         <a href="#top"><img src={Logo} alt=""/></a>
-                    </div>
+                    </div> */}
                     
-                    <ul>
-                        <li><a href="#intro">ABOUT</a></li>
-                        <li><a href="#resume">RESUME</a></li>
-                        <li><a href="#projects">PROJECTS</a></li>
-                        <li><a href="#interests">INTERESTS</a></li>
-                        <li><a href="#carousel-gallery">GALLERY</a></li>
-                        <li><a href="#contact">CONTACT</a></li>
-                    </ul>
+                    <nav>
+                        <ul>
+                            <li><a href="#intro">ABOUT</a></li>
+                            <li><a href="#resume">RESUME</a></li>
+                            <li><a href="#projects">PROJECTS</a></li>
+                            <li><a href="#interests">INTERESTS</a></li>
+                            <li><a href="#carousel-gallery">GALLERY</a></li>
+                            <li><a href="#contact">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                   
+
                 </div>
             </div>
-        </nav>
+            
+        // </nav>
     )
 }
 
