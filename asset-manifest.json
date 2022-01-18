@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d8e94bbb.css",
-    "main.js": "/static/js/main.f3fa746e.js",
+    "main.css": "/static/css/main.de4facd7.css",
+    "main.js": "/static/js/main.ddfa3e27.js",
     "static/js/787.1d583568.chunk.js": "/static/js/787.1d583568.chunk.js",
     "static/media/resume.pdf": "/static/media/resume.028d7d1371c6822df4a3.pdf",
     "static/media/slide8.jpg": "/static/media/slide8.131fa75577f44f3e7cf3.jpg",
@@ -13,7 +13,6 @@
     "static/media/art-clothes.png": "/static/media/art-clothes.ce619fef5d71a81df2af.png",
     "static/media/art-girl.png": "/static/media/art-girl.940ed9e660a99ef1a176.png",
     "static/media/profile.jpg": "/static/media/profile.fd446a3d381ffeaa8894.jpg",
-    "static/media/logo.png": "/static/media/logo.c3d33b8b18eba9d67305.png",
     "static/media/slide4.jpg": "/static/media/slide4.2bffa8803b358c2debc1.jpg",
     "static/media/slide5.jpg": "/static/media/slide5.2ac5e482314ce0fb1199.jpg",
     "static/media/banner-bg.svg": "/static/media/banner-bg.17b49bce266794c94e38.svg",
@@ -23,12 +22,12 @@
     "index.html": "/index.html",
     "static/media/github-icon.svg": "/static/media/github-icon.96a0f5d8b78335af59cee6f19129293c.svg",
     "static/media/mail-icon.svg": "/static/media/mail-icon.9aec8d6f01f92ec7eb076b2d06f056e7.svg",
-    "main.d8e94bbb.css.map": "/static/css/main.d8e94bbb.css.map",
-    "main.f3fa746e.js.map": "/static/js/main.f3fa746e.js.map",
+    "main.de4facd7.css.map": "/static/css/main.de4facd7.css.map",
+    "main.ddfa3e27.js.map": "/static/js/main.ddfa3e27.js.map",
     "787.1d583568.chunk.js.map": "/static/js/787.1d583568.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d8e94bbb.css",
-    "static/js/main.f3fa746e.js"
+    "static/css/main.de4facd7.css",
+    "static/js/main.ddfa3e27.js"
   ]
 }
