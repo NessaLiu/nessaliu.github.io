@@ -1,4 +1,8 @@
-
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 #interests{
     height: 140vh;
     width:auto;
@@ -8,12 +12,123 @@
     justify-content: center;
 }
 
+@media (max-width:2000px){
+
+    #interests{
+        height: auto;
+        max-width:auto;
+        margin:auto;
+        margin-top: 5%;
+        display: flex;
+        justify-content:center;
+    }
+
+    .interests-box{
+        flex-basis: 80vw;
+        height: 100%;
+        background-color: #38A3A5;
+        box-shadow: 10px 10px 2px 1px #216D6F;
+        border-radius: 125px;
+        border: 1px #ccc solid;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .interests-box div{
+        border: 1px #ccc solid;
+    }
+
+    .clothes{
+        background-image: url("../../images/art-clothes.png");
+        background-size: contain;
+        padding-top: 5%;
+        width: 240px;
+        height: 345px;
+        border-radius: 5%;
+        display: flex;
+    }
+    
+    .girl{
+        background-image: url("../../images/art-girl.png");
+        background-size: contain;
+        padding-top: 5%;
+        width: 258px;
+        height: 373px;
+        border-radius: 5%;
+        display: flex;
+    }
+
+}
+
+@media(max-width:1000px){
+
+    .interests-rows{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(350px, auto));
+    }
+
+    .interest-name{
+        font-size: 20px;
+    }
+
+    .interest-desc{
+        font-size: 8px;
+    }
+
+}
+
+@media (max-width: 414px){
+    .interests-rows{
+        display: grid;
+        grid-template-rows: repeat(2, minmax(350px, auto));
+    }
+
+    .interest-name{
+        font-size: 20px;
+    }
+
+    .interest-desc{
+        font-size: 8px;
+    }
+    .girl{
+        background-image: none;
+    }
+
+    .clothes{
+        background-image: none;
+    }
+
+    .row1{
+        margin: 2% 0% 2% 5%;
+        width: 90%;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    
+    .row2{
+        margin: 0% 0% 5% 5%;
+        width: 90%;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+}
+
 .interests-box{
     width: 80vw;
     height: 100vh;
     background-color: #38A3A5;
     box-shadow: 10px 10px 2px 1px #216D6F;
     border-radius: 125px;
+}
+
+.interest-block1{
+    flex: 1;
+    order: 1;
+}
+
+.interest-block2{
+    flex: 1;
+    order: 2;
 }
 
 .interests-title{
@@ -26,7 +141,7 @@
     text-align: right;
 }
 
-.clothes{
+/* .clothes{
     background-image: url("../../images/art-clothes.png");
     background-size: contain;
     padding-top: 5%;
@@ -44,7 +159,7 @@
     height: 373px;
     border-radius: 5%;
     display: flex;
-}
+} */
 
 .row1{
     margin: 2% 0% 2% 5%;

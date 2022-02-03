@@ -5,7 +5,7 @@ const Navbar = () => {
     return (
         // <nav id="navbar"> 
 
-            <div className="navbar">
+            <nav className="navbar">
                 
                 <div class="navbar-container flex">
 
@@ -15,7 +15,7 @@ const Navbar = () => {
                         <a href="#top"><img src={Logo} alt=""/></a>
                     </div> */}
                     
-                    <nav>
+                    {/* <nav> */}
                         <ul>
                             <li><a href="#intro">ABOUT</a></li>
                             <li><a href="#resume">RESUME</a></li>
@@ -24,11 +24,11 @@ const Navbar = () => {
                             <li><a href="#carousel-gallery">GALLERY</a></li>
                             <li><a href="#contact">CONTACT</a></li>
                         </ul>
-                    </nav>
+                    {/* </nav> */}
                    
 
                 </div>
-            </div>
+            </nav>
             
         // </nav>
     )
