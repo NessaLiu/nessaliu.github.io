@@ -78,10 +78,10 @@
 }
 
 @media (max-width: 414px){
-    .interests-rows{
+    /* .interests-rows{
         display: grid;
-        grid-template-rows: repeat(2, minmax(350px, auto));
-    }
+        grid-template-columns: repeat(2, minmax(350px, auto));
+    } */
 
     .interest-name{
         font-size: 20px;
@@ -89,13 +89,6 @@
 
     .interest-desc{
         font-size: 8px;
-    }
-    .girl{
-        background-image: none;
-    }
-
-    .clothes{
-        background-image: none;
     }
 
     .row1{
