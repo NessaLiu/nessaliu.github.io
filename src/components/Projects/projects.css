@@ -20,14 +20,14 @@
         background-color: #57CC99;
         box-shadow: 10px 10px 2px 1px #67A58A;
         border-radius: 125px;
-        border: 1px #ccc solid;
+        /* border: 1px #ccc solid; */
         align-items: center;
         justify-content: center;
     }
 
-    .projects-box div{
+    /* .projects-box div{
         border: 1px #ccc solid;
-    }
+    } */
 }
 
 /* tablets and under */

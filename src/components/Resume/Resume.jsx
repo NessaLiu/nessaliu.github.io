@@ -1,5 +1,5 @@
 import "./resume.css"
-import ResumePDF from "../../files/resume.pdf"
+import ResumePDF from "../../files/final_resume.pdf"
 import ResumeBtn from "../../images/resume-button.svg"
 
 const Resume = () => {

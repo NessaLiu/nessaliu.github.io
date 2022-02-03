@@ -29,14 +29,14 @@
         background-color: #38A3A5;
         box-shadow: 10px 10px 2px 1px #216D6F;
         border-radius: 125px;
-        border: 1px #ccc solid;
+        /* border: 1px #ccc solid; */
         align-items: center;
         justify-content: center;
     }
 
-    .interests-box div{
+    /* .interests-box div{
         border: 1px #ccc solid;
-    }
+    } */
 
     .clothes{
         background-image: url("../../images/art-clothes.png");
