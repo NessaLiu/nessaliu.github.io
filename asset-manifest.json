@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.de4facd7.css",
-    "main.js": "/static/js/main.ddfa3e27.js",
+    "main.css": "/static/css/main.b480b301.css",
+    "main.js": "/static/js/main.d0980275.js",
     "static/js/787.1d583568.chunk.js": "/static/js/787.1d583568.chunk.js",
     "static/media/resume.pdf": "/static/media/resume.028d7d1371c6822df4a3.pdf",
     "static/media/slide8.jpg": "/static/media/slide8.131fa75577f44f3e7cf3.jpg",
@@ -15,19 +15,19 @@
     "static/media/profile.jpg": "/static/media/profile.fd446a3d381ffeaa8894.jpg",
     "static/media/slide4.jpg": "/static/media/slide4.2bffa8803b358c2debc1.jpg",
     "static/media/slide5.jpg": "/static/media/slide5.2ac5e482314ce0fb1199.jpg",
-    "static/media/banner-bg.svg": "/static/media/banner-bg.17b49bce266794c94e38.svg",
-    "static/media/resume-button.svg": "/static/media/resume-button.a065fcb65a81af8256af9ad3899f18be.svg",
-    "static/media/linkedin-icon.svg": "/static/media/linkedin-icon.6427b599522c6e25ed6950d8183d145b.svg",
-    "static/media/insta-icon.svg": "/static/media/insta-icon.eaf84455815a4124cc7e13b43ed54e95.svg",
+    "static/media/banner-bg.svg": "/static/media/banner-bg.0ecc94a6733789aff27a.svg",
+    "static/media/resume-button.svg": "/static/media/resume-button.811f9854bd418cf62f0d26b8d51c8cdd.svg",
+    "static/media/linkedin-icon.svg": "/static/media/linkedin-icon.85af75dc9ec53894a802a745e3474c85.svg",
+    "static/media/insta-icon.svg": "/static/media/insta-icon.ddc3951eba575fe93320dfc317becf87.svg",
     "index.html": "/index.html",
-    "static/media/github-icon.svg": "/static/media/github-icon.96a0f5d8b78335af59cee6f19129293c.svg",
-    "static/media/mail-icon.svg": "/static/media/mail-icon.9aec8d6f01f92ec7eb076b2d06f056e7.svg",
-    "main.de4facd7.css.map": "/static/css/main.de4facd7.css.map",
-    "main.ddfa3e27.js.map": "/static/js/main.ddfa3e27.js.map",
+    "static/media/github-icon.svg": "/static/media/github-icon.3fc0885c5f6890b61943efc9396814d6.svg",
+    "static/media/mail-icon.svg": "/static/media/mail-icon.0f5103660bdb7c738f954ad6e1982fa7.svg",
+    "main.b480b301.css.map": "/static/css/main.b480b301.css.map",
+    "main.d0980275.js.map": "/static/js/main.d0980275.js.map",
     "787.1d583568.chunk.js.map": "/static/js/787.1d583568.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.de4facd7.css",
-    "static/js/main.ddfa3e27.js"
+    "static/css/main.b480b301.css",
+    "static/js/main.d0980275.js"
   ]
 }
