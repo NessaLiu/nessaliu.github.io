@@ -1,5 +1,7 @@
+
 #banner{
-    max-height: 50vh;
+    height: 20vh;
+    display: block;
     background-image: url("../../images/banner-bg.svg");
     width: 100%;
     position: relative;
@@ -13,12 +15,34 @@
 }
 
 .banner-name{
-    font-size: 120px;
+    font-size: 35px;
     color: #29483A;
     line-height: 2em;
-    padding: 5% 0% 5% 5%;
+    padding: 5%;
     text-align: center;
     position: relative;
+}
+
+@media (min-width: 1024px) {
+    .banner-name {
+        font-size: 80px;
+    };
+
+    #banner {
+        height: 50vh;
+    }
+    
+}
+
+@media (min-width: 1440px) {
+    .banner-name {
+        font-size: 120px;
+    };
+
+    #banner {
+        height: 50vh;
+    }
+    
 }
 /* 
 .banner-bg{
