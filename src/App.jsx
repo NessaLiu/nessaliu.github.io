@@ -20,7 +20,7 @@ const App = () => {
       <Projects />
       <Interests />
       <CarouselGallery />
-      {/* <Contact/> */}
+      <Contact />
       {/* <Footer/> */}
     </div>
   );
