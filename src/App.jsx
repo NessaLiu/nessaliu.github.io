@@ -12,16 +12,16 @@ import CarouselGallery from "./components/Carousel/Carousel";
 const App = () => {
   return (
     <div>
-      <Navbar/>
-      <Banner/>
-      <Intro/>
-      <Quote/>
-      <Resume/>
-      <Projects/>
-      <Interests/>
-      <CarouselGallery/>
-      <Contact/>
-      <Footer/>
+      <Navbar />
+      <Banner />
+      <Intro />
+      <Quote />
+      <Resume />
+      <Projects />
+      <Interests />
+      <CarouselGallery />
+      <Contact />
+      <Footer />
     </div>
   );
 };
