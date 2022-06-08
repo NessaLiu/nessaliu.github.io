@@ -21,7 +21,7 @@ const App = () => {
       <Interests />
       <CarouselGallery />
       <Contact />
-      {/* <Footer/> */}
+      <Footer />
     </div>
   );
 };
