@@ -5,10 +5,14 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 1ff1c8112dee932b07faa44bcd16cd579b1185ee
     "main.css": "/static/css/main.7fe8ab4b.css",
     "main.js": "/static/js/main.cb81cf7b.js",
     "static/js/787.1d583568.chunk.js": "/static/js/787.1d583568.chunk.js",
 =======
+<<<<<<< HEAD
     "main.css": "/static/css/main.746a41c1.css",
 =======
     "main.css": "/static/css/main.d8e94bbb.css",
@@ -28,6 +32,13 @@
     "static/js/787.1d583568.chunk.js": "/static/js/787.1d583568.chunk.js",
     "static/media/resume.pdf": "/static/media/resume.028d7d1371c6822df4a3.pdf",
 >>>>>>> ef4d0d2 (Updates)
+=======
+    "main.css": "/static/css/main.caa2e8d5.css",
+    "main.js": "/static/js/main.d0980275.js",
+    "static/js/787.1d583568.chunk.js": "/static/js/787.1d583568.chunk.js",
+    "static/media/resume.pdf": "/static/media/resume.028d7d1371c6822df4a3.pdf",
+>>>>>>> 555d6c0c9af3fa79fa067dd746e945ebee8c385c
+>>>>>>> 1ff1c8112dee932b07faa44bcd16cd579b1185ee
     "static/media/slide8.jpg": "/static/media/slide8.131fa75577f44f3e7cf3.jpg",
     "static/media/slide2.jpg": "/static/media/slide2.130cdcc7a1b494c064ad.jpg",
     "static/media/slide3.jpg": "/static/media/slide3.d9b473e85f394ef4349d.jpg",
@@ -39,9 +50,18 @@
     "static/media/profile.jpg": "/static/media/profile.fd446a3d381ffeaa8894.jpg",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "static/media/slide4.jpg": "/static/media/slide4.2bffa8803b358c2debc1.jpg",
     "static/media/slide5.jpg": "/static/media/slide5.2ac5e482314ce0fb1199.jpg",
     "static/media/final_resume.pdf": "/static/media/final_resume.88053689954e46a5b06a.pdf",
+=======
+    "static/media/slide4.jpg": "/static/media/slide4.2bffa8803b358c2debc1.jpg",
+    "static/media/slide5.jpg": "/static/media/slide5.2ac5e482314ce0fb1199.jpg",
+<<<<<<< HEAD
+    "static/media/final_resume.pdf": "/static/media/final_resume.88053689954e46a5b06a.pdf",
+=======
+>>>>>>> 555d6c0c9af3fa79fa067dd746e945ebee8c385c
+>>>>>>> 1ff1c8112dee932b07faa44bcd16cd579b1185ee
     "static/media/banner-bg.svg": "/static/media/banner-bg.0ecc94a6733789aff27a.svg",
     "static/media/resume-button.svg": "/static/media/resume-button.811f9854bd418cf62f0d26b8d51c8cdd.svg",
     "static/media/linkedin-icon.svg": "/static/media/linkedin-icon.85af75dc9ec53894a802a745e3474c85.svg",
@@ -49,6 +69,10 @@
     "index.html": "/index.html",
     "static/media/github-icon.svg": "/static/media/github-icon.3fc0885c5f6890b61943efc9396814d6.svg",
     "static/media/mail-icon.svg": "/static/media/mail-icon.0f5103660bdb7c738f954ad6e1982fa7.svg",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 1ff1c8112dee932b07faa44bcd16cd579b1185ee
     "main.7fe8ab4b.css.map": "/static/css/main.7fe8ab4b.css.map",
     "main.cb81cf7b.js.map": "/static/js/main.cb81cf7b.js.map",
     "787.1d583568.chunk.js.map": "/static/js/787.1d583568.chunk.js.map"
@@ -57,6 +81,7 @@
     "static/css/main.7fe8ab4b.css",
     "static/js/main.cb81cf7b.js"
 =======
+<<<<<<< HEAD
     "static/media/logo.png": "/static/media/logo.c3d33b8b18eba9d67305.png",
 =======
 >>>>>>> 1775d5d (Updates)
@@ -69,11 +94,14 @@
     "index.html": "/index.html",
     "static/media/github-icon.svg": "/static/media/github-icon.3fc0885c5f6890b61943efc9396814d6.svg",
     "static/media/mail-icon.svg": "/static/media/mail-icon.0f5103660bdb7c738f954ad6e1982fa7.svg",
+=======
+>>>>>>> 1ff1c8112dee932b07faa44bcd16cd579b1185ee
     "main.caa2e8d5.css.map": "/static/css/main.caa2e8d5.css.map",
     "main.d0980275.js.map": "/static/js/main.d0980275.js.map",
     "787.1d583568.chunk.js.map": "/static/js/787.1d583568.chunk.js.map"
   },
   "entrypoints": [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -91,5 +119,10 @@
 >>>>>>> afe36df (Updates)
     "static/js/main.d0980275.js"
 >>>>>>> 206f826 (Updates)
+=======
+    "static/css/main.caa2e8d5.css",
+    "static/js/main.d0980275.js"
+>>>>>>> 555d6c0c9af3fa79fa067dd746e945ebee8c385c
+>>>>>>> 1ff1c8112dee932b07faa44bcd16cd579b1185ee
   ]
 }
