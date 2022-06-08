@@ -60,10 +60,13 @@ p {
     color: #BAFBFC;    
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 780px) {
     .interests-container {
         margin: 3rem;
     }
+}
+
+@media (min-width: 1024px) {
     .row1, .row2 {
         display: flex;
         flex-direction: row;
