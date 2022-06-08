@@ -1,0 +1,21 @@
+#carousel-gallery{
+    display: none;
+}
+
+@media (min-width: 780px) {
+    #carousel-gallery{
+    display: block;
+    width: auto;
+    padding: 3rem 0;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+}
+}
+
+@media (min-width: 1024px) {
+.carousel .slide{
+    height: 80vh;
+    width: auto;
+}
+}

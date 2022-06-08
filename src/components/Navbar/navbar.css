@@ -1,0 +1,138 @@
+img{
+    width: 100%;
+}
+
+.navbar{
+    height: 9vh;
+    width: 100%;
+    background-color: #60AF8D;
+    color: white;
+    /* margin: auto;
+    position: fixed;
+    transition: all .7 ease-in;
+    z-index: 100;
+    display: flex;
+    padding-right: 5%; */
+}
+
+.navbar-container{
+    max-width: 80%;
+    margin: 0 auto;
+    padding:0 2%;
+    overflow: auto;
+    /* width: 100%; */
+    /* display: flex; */
+    
+}
+
+.navbar .flex{
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+    padding: 0 2vw;
+    margin: 0 2%;
+}
+
+.navbar h1 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 1% 0;
+}
+
+.navbar a:hover{
+    color: #29483A;
+    text-decoration: overline;
+}
+
+/*  Tablets and Under */
+@media (max-width: 768px){
+    .navbar {
+        height:30vh;
+    }
+
+    .navbar .flex{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        display:list-item;
+    }
+
+    .navbar a{
+        padding: 5%;
+    }
+}
+
+/*  Mobile */
+@media (max-width: 414px){
+    .navbar {
+        height:30vh;
+    }
+
+    .navbar .flex{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        display:list-item;
+    }
+
+    .navbar a{
+        padding: 5%;
+    }
+}
+
+
+/* .logo img{
+    margin-top: 20%;
+    height: 5vh;
+    width: 5vh;
+} */
+
+/* .menu{
+    padding-top: 0%;
+    width: 100vh;
+    display: flex;
+    text-align: center;
+}
+
+.menu ul{
+    margin-top: 3%;
+    text-align: center;
+}
+
+/* .menu li{
+    display: inline;
+    list-style: none;
+    
+} */ 
+
+/* .menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+
+} */
+
+/* .menu a:hover{
+    color: #29483A;
+    font-weight: bolder;
+    font-size: 18px;
+    font-weight: bold;
+} */
