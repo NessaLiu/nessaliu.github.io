@@ -14,7 +14,7 @@ const App = () => {
     <div>
       <Navbar/>
       <Banner/>
-      {/* <Intro/> */}
+      <Intro/>
       {/* <Quote/> */}
       {/* <Resume/> */}
       {/* <Projects/> */}
