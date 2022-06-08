@@ -13,7 +13,6 @@
 }
 
 .projects-box{
-    height: 100%;
     background-color: #57CC99;
     box-shadow: 10px 10px 2px 1px #67A58A;
     border-radius: 125px;
@@ -43,7 +42,8 @@
 }
 
 .project-name{
-    font-size: 30px;
+    font-size: 2rem;
+    padding-bottom: 1rem;
     font-weight: bold;
     color: #e4f3e5;
 }

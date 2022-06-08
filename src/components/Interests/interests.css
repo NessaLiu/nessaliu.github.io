@@ -1,191 +1,107 @@
 
-
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
 #interests{
-    height: 140vh;
-    width:auto;
-    margin:auto;
     margin-top: 5%;
     display: flex;
     justify-content: center;
 }
 
-@media (max-width:2000px){
-
-    #interests{
-        height: auto;
-        max-width:auto;
-        margin:auto;
-        margin-top: 5%;
-        display: flex;
-        justify-content:center;
-    }
-
-    .interests-box{
-        flex-basis: 80vw;
-        height: 100%;
-        background-color: #38A3A5;
-        box-shadow: 10px 10px 2px 1px #216D6F;
-        border-radius: 125px;
-        /* border: 1px #ccc solid; */
-        align-items: center;
-        justify-content: center;
-    }
-
-    /* .interests-box div{
-        border: 1px #ccc solid;
-    } */
-
-    .clothes{
-        background-image: url("../../images/art-clothes.png");
-        background-size: contain;
-        padding-top: 5%;
-        width: 240px;
-        height: 345px;
-        border-radius: 5%;
-        display: flex;
-    }
-    
-    .girl{
-        background-image: url("../../images/art-girl.png");
-        background-size: contain;
-        padding-top: 5%;
-        width: 258px;
-        height: 373px;
-        border-radius: 5%;
-        display: flex;
-    }
-
+p {
+    padding-bottom: 2rem;
 }
 
-@media(max-width:1000px){
-
-    .interests-rows{
-        display: grid;
-        grid-template-columns: repeat(2, minmax(350px, auto));
-    }
-
-    .interest-name{
-        font-size: 20px;
-    }
-
-    .interest-desc{
-        font-size: 8px;
-    }
-
+.clothes-container, .girl-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+.clothes, .girl {
+    width: 80%;
+    border-radius: 5%;
+}
+.girl-container {
+    padding-bottom: 5rem;
 }
 
-@media (max-width: 414px){
-    /* .interests-rows{
-        display: grid;
-        grid-template-columns: repeat(2, minmax(350px, auto));
-    } */
-
-    .interest-name{
-        font-size: 20px;
-    }
-
-    .interest-desc{
-        font-size: 8px;
-    }
-
-    .row1{
-        margin: 2% 0% 2% 5%;
-        width: 90%;
-        display: grid;
-        grid-template-columns: 100%;
-    }
-    
-    .row2{
-        margin: 0% 0% 5% 5%;
-        width: 90%;
-        display: grid;
-        grid-template-columns: 100%;
-    }
-}
-
-.interests-box{
-    width: 80vw;
-    height: 100vh;
+.interests-container{
     background-color: #38A3A5;
     box-shadow: 10px 10px 2px 1px #216D6F;
     border-radius: 125px;
 }
 
-.interest-block1{
-    flex: 1;
-    order: 1;
+.interest-block {
+    padding: 1rem;
 }
 
-.interest-block2{
-    flex: 1;
-    order: 2;
+.row1, .row2 {
+    display: flex;
+    flex-direction: column;
 }
 
 .interests-title{
     color: white;
     font-weight: bold;
-    font-size: 72px;
-    padding-top: 5%;
-    padding-right: 8%;
-    line-height: 18px;
-    text-align: right;
-}
-
-/* .clothes{
-    background-image: url("../../images/art-clothes.png");
-    background-size: contain;
-    padding-top: 5%;
-    width: 240px;
-    height: 345px;
-    border-radius: 5%;
-    display: flex;
-}
-
-.girl{
-    background-image: url("../../images/art-girl.png");
-    background-size: contain;
-    padding-top: 5%;
-    width: 258px;
-    height: 373px;
-    border-radius: 5%;
-    display: flex;
-} */
-
-.row1{
-    margin: 2% 0% 2% 5%;
-    width: 90%;
-    display: grid;
-    grid-template-columns: 20% 80%;
-}
-
-.row2{
-    margin: 0% 0% 5% 5%;
-    width: 90%;
-    display: grid;
-    grid-template-columns: 80% 20%;
+    font-size: 3.5rem;
+    text-align: center;
+    padding: 2rem 1rem;
 }
 
 .interest-name{
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: bold;
-    padding-top: 2%;
-    padding-left: 5%;
     color: #BAFBFC;
+    padding-bottom: 1rem;
 }
 
 .interest-desc{
-    font-size: 20px;
+    font-size: 1rem;
     line-height: 1.5em;
     font-weight: 200;
-    color: #BAFBFC;
-    padding: 3% 2% 5% 5%;
-    
+    color: #BAFBFC;    
 }
 
+@media (min-width: 1024px) {
+    .interests-container {
+        margin: 3rem;
+    }
+    .row1, .row2 {
+        display: flex;
+        flex-direction: row;
+    }
+    .interest-block {
+        width: 75%;
+        padding: 2rem;
+    }
+    .interests-title {
+        text-align: right;
+        padding-right: 4rem;
+    }
+    .interest-name{
+        padding-right: 4rem;
+    }
+    .interest-desc{
+        font-size: 1.25rem;
+    }
+    .row2 {
+        padding-bottom: 4rem;
+    }
+    .girl-container {
+        padding-bottom: 0;
+    }
+}
 
+@media (min-width: 1440px) {
+    .interests-container {
+        margin: 5rem;
+    }
+    .interests-title {
+        padding-right: 6rem;
+    }
+    .project-desc{
+        font-size: 1.25rem;
+    }
+    .clothes, .girl {
+        width: 70%;
+    }
 
+}
