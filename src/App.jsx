@@ -8,20 +8,21 @@ import Quote from "./components/Quote/Quote";
 import Resume from "./components/Resume/Resume";
 import Footer from "./components/Footer/Footer";
 import CarouselGallery from "./components/Carousel/Carousel";
+import React from "react";
 
 const App = () => {
   return (
     <div>
       <Navbar />
       <Banner />
-      <Intro />
+      {/* <Intro />
       <Quote />
       <Resume />
       <Projects />
       <Interests />
       <CarouselGallery />
       <Contact />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 };
