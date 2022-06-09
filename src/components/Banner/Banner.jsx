@@ -26,12 +26,12 @@ const Banner = () => {
       .from(
         firstNameRef.current,
         { duration: 1, y: -40, autoAlpha: 0, ease: "easeBounce" },
-        "start"
+        "<+=0.5"
       )
       .from(
         lastNameRef.current,
         { duration: 1, y: 40, autoAlpha: 0, ease: "easeBounce" },
-        "start"
+        "<"
       )
       .from(
         dotRef.current,
