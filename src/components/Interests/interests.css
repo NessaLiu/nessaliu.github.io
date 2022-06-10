@@ -17,11 +17,20 @@ p {
 }
 .clothes, .girl {
     width: 80%;
-    border-radius: 5%;
+    transform-origin: left;
+    object-fit: cover;
 }
 .girl-container {
     padding-bottom: 5rem;
 }
+/* .mask {
+    width: 80%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
 
 .interests-container{
     background-color: #38A3A5;

@@ -8,6 +8,14 @@ import Quote from "./components/Quote/Quote";
 import Resume from "./components/Resume/Resume";
 import Footer from "./components/Footer/Footer";
 import CarouselGallery from "./components/Carousel/Carousel";
+import React from "react";
+import gsapInit from "./utils/gsap-init";
+
+// Check if running scripts in valid web-browser
+const isValidBrowser = typeof window !== "undefined";
+if (isValidBrowser) {
+  gsapInit();
+}
 
 const App = () => {
   return (
