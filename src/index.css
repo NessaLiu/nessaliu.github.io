@@ -12,3 +12,7 @@ code {
     monospace; */
   font-family: 'Inter', sans-serif;
 }
+
+.swiper-pagination-bullet-active {
+  background-color: #669772;
+}
