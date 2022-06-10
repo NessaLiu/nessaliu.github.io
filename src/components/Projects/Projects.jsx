@@ -1,13 +1,62 @@
 import "./projects.css";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
 
 const Projects = () => {
+  const containerRef = useRef(null);
+  const titleRef = useRef(null);
+  const section1Ref = useRef(null);
+  const section2Ref = useRef(null);
+  const section3Ref = useRef(null);
+  const section4Ref = useRef(null);
+
+  useEffect(() => {
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: containerRef.current,
+      },
+    });
+
+    tl.from(containerRef.current, {
+      duration: 0.5,
+      autoAlpha: 0,
+      scale: 0.8,
+    })
+      .from(
+        titleRef.current,
+        {
+          duration: 1,
+          autoAlpha: 0,
+          y: 50,
+        },
+        0.5
+      )
+      .from(
+        [
+          section1Ref.current,
+          section2Ref.current,
+          section3Ref.current,
+          section4Ref.current,
+        ],
+        {
+          duration: 0.5,
+          autoAlpha: 0,
+          y: 50,
+          stagger: 0.25,
+        },
+        "<+=0.5"
+      );
+  }, []);
+
   return (
     <section id="projects">
-      <div className="projects-box">
-        <h1 className="projects-title">projects</h1>
+      <div ref={containerRef} className="projects-box">
+        <h1 ref={titleRef} className="projects-title">
+          projects
+        </h1>
 
         <div className="projects-columns">
-          <div className="project-block">
+          <div ref={section1Ref} className="project-block">
             <h2 className="project-name">"Finn" Finance Bot</h2>
             <p className="project-desc">
               During the past winter break of 2021, I joined the 2-day online
@@ -30,7 +79,7 @@ const Projects = () => {
             </p>
           </div>
 
-          <div className="project-block">
+          <div ref={section2Ref} className="project-block">
             <h2 className="project-name">
               "Vantoria"
               <br />
@@ -59,7 +108,7 @@ const Projects = () => {
             </p>
           </div>
 
-          <div className="project-block">
+          <div ref={section3Ref} className="project-block">
             <h2 className="project-name">
               Safe Portfolio
               <br /> Generator
@@ -88,7 +137,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="horizontal-block">
+        <div ref={section4Ref} className="horizontal-block">
           <h2 className="project-name">Summer Showdown Platform Game</h2>
           <p className="project-desc">
             For the final culminating assignment for ICS4U Grade 12 Computer

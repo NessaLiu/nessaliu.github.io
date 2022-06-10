@@ -1,17 +1,81 @@
 import "./interests.css";
 import girl from "../../images/art-girl.png";
 import clothes from "../../images/art-clothes.png";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
 
 const Interests = () => {
+  const containerRef = useRef(null);
+  const titleRef = useRef(null);
+  const img1Ref = useRef(null);
+  const img2Ref = useRef(null);
+  const section1Ref = useRef(null);
+  const section2Ref = useRef(null);
+
+  let masks = document.querySelectorAll(".mask");
+
+  useEffect(() => {
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: containerRef.current,
+      },
+    });
+
+    tl.from(containerRef.current, {
+      duration: 0.5,
+      autoAlpha: 0,
+      scale: 0.8,
+    })
+      .from(titleRef.current, {
+        duration: 1,
+        autoAlpha: 0,
+        y: 50,
+      })
+      .from(
+        section1Ref.current,
+        {
+          duration: 1,
+          autoAlpha: 0,
+          y: 50,
+        },
+        "<+=0.5"
+      )
+      .from(
+        img1Ref.current,
+        {
+          scale: 0.8,
+          autoAlpha: 0,
+          duration: 1,
+        },
+        "<"
+      )
+      .from(section2Ref.current, {
+        duration: 1,
+        autoAlpha: 0,
+        y: 50,
+      })
+      .from(
+        img2Ref.current,
+        {
+          scale: 0.8,
+          autoAlpha: 0,
+          duration: 1,
+        },
+        "<"
+      );
+  }, []);
+
   return (
     <section id="interests">
-      <div className="interests-container">
-        <h1 className="interests-title">interests</h1>
+      <div ref={containerRef} className="interests-container">
+        <h1 ref={titleRef} className="interests-title">
+          interests
+        </h1>
         <div className="row1">
-          <div className="clothes-container">
+          <div ref={img1Ref} className="clothes-container">
             <img className="clothes" src={clothes} />
           </div>
-          <div className="interest-block">
+          <div ref={section1Ref} className="interest-block">
             <h2 className="interest-name">At a Young Age...</h2>
             <div className="interest-desc">
               <p>
@@ -35,7 +99,7 @@ const Interests = () => {
         </div>
 
         <div className="row2">
-          <div className="interest-block">
+          <div ref={section2Ref} className="interest-block">
             <h2 className="interest-name">And Now...</h2>
             <div className="interest-desc">
               <p>
@@ -57,7 +121,7 @@ const Interests = () => {
               </p>
             </div>
           </div>
-          <div className="girl-container">
+          <div ref={img2Ref} className="girl-container">
             <img className="girl" src={girl} />
           </div>
         </div>

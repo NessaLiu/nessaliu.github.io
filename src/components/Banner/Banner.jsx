@@ -2,7 +2,6 @@ import "./banner.css";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { CustomEase } from "gsap/CustomEase";
-gsap.registerPlugin(CustomEase);
 
 const Banner = () => {
   const containerRef = useRef(null);
