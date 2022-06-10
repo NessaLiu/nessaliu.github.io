@@ -27,9 +27,9 @@ const App = () => {
       <Resume />
       <Projects />
       <Interests />
-      {/* <CarouselGallery /> */}
-      {/* <Contact /> */}
-      {/* <Footer /> */}
+      <CarouselGallery />
+      <Contact />
+      <Footer />
     </div>
   );
 };

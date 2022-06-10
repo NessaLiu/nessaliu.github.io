@@ -12,8 +12,6 @@ const Interests = () => {
   const section1Ref = useRef(null);
   const section2Ref = useRef(null);
 
-  let masks = document.querySelectorAll(".mask");
-
   useEffect(() => {
     let tl = gsap.timeline({
       scrollTrigger: {
