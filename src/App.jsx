@@ -7,11 +7,12 @@ import Contact from "./components/Contact/Contact";
 import Quote from "./components/Quote/Quote";
 import Resume from "./components/Resume/Resume";
 import Footer from "./components/Footer/Footer";
-import CarouselGallery from "./components/Carousel/Carousel";
+// import CarouselGallery from "./components/Carousel/Carousel";
 import Slider from "./components/Slider/Slider";
 import React from "react";
 import gsapInit from "./utils/gsap-init";
 import "./styles/global.css";
+import { sliderItems } from "./data/data";
 
 // Check if running scripts in valid web-browser
 const isValidBrowser = typeof window !== "undefined";
@@ -29,7 +30,7 @@ const App = () => {
       <Resume />
       <Projects />
       <Interests />
-      <Slider />
+      <Slider sliderItems={sliderItems} />
       <Contact />
       <Footer />
     </div>
