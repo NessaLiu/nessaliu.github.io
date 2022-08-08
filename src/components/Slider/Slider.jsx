@@ -3,18 +3,8 @@ import { useEffect, useState, useRef } from "react";
 import { useSelector } from "react-redux";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
-import gsap from "gsap";
 import "swiper/css";
 import "swiper/css/pagination";
-// slide images
-import Slide1 from "../../images/slide1.jpg";
-import Slide2 from "../../images/slide2.jpg";
-import Slide3 from "../../images/slide3.jpg";
-import Slide4 from "../../images/slide4.jpg";
-import Slide5 from "../../images/slide5.jpg";
-import Slide6 from "../../images/slide6.png";
-import Slide7 from "../../images/slide7.jpg";
-import Slide8 from "../../images/slide8.jpg";
 
 /*
 sliderItems: {
@@ -38,6 +28,7 @@ const Slider = (props) => {
   //       setPrevSlideIndex(slideIndex);
   //     }
   //   }, [slideIndex, prevSlideIndex]);
+  const sliderItems = props.sliderItems;
 
   return (
     <div className="sliderWrapper">
@@ -49,30 +40,14 @@ const Slider = (props) => {
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={(swiper) => console.log(swiper)}
       >
-        <SwiperSlide className="slide">
-          <img src={Slide1} />
-        </SwiperSlide>
-        <SwiperSlide className="slide">
-          <img src={Slide2} />
-        </SwiperSlide>
-        <SwiperSlide className="slide">
-          <img src={Slide3} />
-        </SwiperSlide>
-        <SwiperSlide className="slide">
-          <img src={Slide4} />
-        </SwiperSlide>
-        <SwiperSlide className="slide">
-          <img src={Slide5} />
-        </SwiperSlide>
-        <SwiperSlide className="slide">
-          <img src={Slide6} />
-        </SwiperSlide>
-        <SwiperSlide className="slide">
-          <img src={Slide7} />
-        </SwiperSlide>
-        <SwiperSlide className="slide">
-          <img src={Slide8} />
-        </SwiperSlide>
+        {sliderItems.map((slideItem) => {
+          console.log(slideItem.imgLink);
+          return (
+            <SwiperSlide className="slide" key={slideItem.key}>
+              <img src={slideItem.imgLink} alt={slideItem.title} />
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
     </div>
   );
