@@ -1,6 +1,8 @@
 
 #interests{
     margin-top: 5rem;
+    margin-left: 0.8rem;
+    margin-right: 1.4rem;
     display: flex;
     justify-content: center;
 }
@@ -19,6 +21,8 @@ p {
     width: 80%;
     transform-origin: left;
     object-fit: cover;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 10px rgba(255, 255, 255, 0.349);
 }
 .girl-container {
     padding-bottom: 5rem;
@@ -35,7 +39,7 @@ p {
 .interests-container{
     background-color: #38A3A5;
     box-shadow: 10px 10px 2px 1px #216D6F;
-    border-radius: 125px;
+    border-radius: 5rem;
 }
 
 .interest-block {

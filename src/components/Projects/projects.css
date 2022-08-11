@@ -3,19 +3,18 @@
     padding: 0;
     margin: 0;
 }
-#projects{
+#projects {
     height: auto;
     max-width:auto;
-    margin:auto;
-    margin-top: 5%;
+    margin: 5% 1.4rem auto 0.8rem;
     display: flex;
     justify-content:center;
 }
 
-.projects-box{
+.projects-box {
     background-color: #57CC99;
     box-shadow: 10px 10px 2px 1px #67A58A;
-    border-radius: 125px;
+    border-radius: 5rem;
     align-items: center;
     justify-content: center;
 }
@@ -25,7 +24,7 @@
     flex-direction: column;
 }
 
-.projects-title{
+.projects-title {
     color: white;
     font-weight: bold;
     font-size: 3.5rem;
