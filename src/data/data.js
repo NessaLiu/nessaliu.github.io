@@ -40,3 +40,21 @@ export const sliderItems = [
         imgLink: 'assets/images/slide8.jpg'
     },
 ]
+
+export const projects = {
+    title: "projects",
+    projects: [
+        {key: 0, projectName: "'Finn' Finance Bot", projectDesc: ""},
+        {key: 1, projectName: "Finn", projectDesc: ""},
+        {key: 2, projectName: "Finn", projectDesc: ""},
+        {key: 3, projectName: "Finn", projectDesc: ""}
+    ]
+}
+
+export const skills = {
+    title: "skills",
+    subtitleOne: "languages",
+    subtitleTwo: "tools + libraries",
+    languages: ["JavaScript", "HTML/CSS", "TypeScript", "C", "Python", "SQL"],
+    toolsAndLibraries: ["React", "Next.js", "Three.js", "GSAP", "Jupyter Notebook", "Git"]
+}

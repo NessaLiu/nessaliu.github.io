@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar/Navbar";
 import Banner from "./components/Banner/Banner";
 import Intro from "./components/Intro/Intro";
+import Skills from "./components/Skills/skills";
 import Projects from "./components/Projects/Projects";
 import Interests from "./components/Interests/Interests";
 import Contact from "./components/Contact/Contact";
@@ -12,7 +13,7 @@ import Slider from "./components/Slider/Slider";
 import React from "react";
 import gsapInit from "./utils/gsap-init";
 import "./styles/global.css";
-import { sliderItems } from "./data/data";
+import { skills, sliderItems } from "./data/data";
 
 // Check if running scripts in valid web-browser
 const isValidBrowser = typeof window !== "undefined";
@@ -28,6 +29,7 @@ const App = () => {
       <Intro />
       <Quote />
       <Resume />
+      <Skills skills={skills} />
       <Projects />
       <Interests />
       <Slider sliderItems={sliderItems} />
