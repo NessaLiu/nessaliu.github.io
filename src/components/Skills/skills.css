@@ -31,6 +31,8 @@
 
 .skillsContentContainer {
     padding-bottom: 3.5rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .languagesTitle, .toolsTitle {
@@ -55,15 +57,34 @@
     #skills {
         margin: 3rem;
     }
+    .skillsContentContainer {
+        flex-direction: row;
+    }
+    .languagesBox, .toolsBox {
+       width: 35vw;
+     }
+     .languagesBox, .toolsBox {
+        margin: 1rem;
+        padding-left: 2.5%;
+        border: 2px dashed #C7F9CC;
+        border-radius: 25px
+    }
+    .skillsContentContainer {
+        transform: translateX(6%);
+    }
 }
 
 @media (min-width: 1024px) {
-
-
+    .skillsContentContainer {
+        transform: translateX(8%);
+    }
 }
 
 @media (min-width: 1440px) {
     #skills {
         margin: 5rem;
+    }
+    .skillsContentContainer {
+        transform: translateX(8%);
     }
 }
