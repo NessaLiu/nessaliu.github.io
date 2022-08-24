@@ -13,7 +13,7 @@ import Slider from "./components/Slider/Slider";
 import React from "react";
 import gsapInit from "./utils/gsap-init";
 import "./styles/global.css";
-import { skills, sliderItems } from "./data/data";
+import { skills, projects, sliderItems } from "./data/data";
 
 // Check if running scripts in valid web-browser
 const isValidBrowser = typeof window !== "undefined";
@@ -30,7 +30,7 @@ const App = () => {
       <Quote />
       <Resume />
       <Skills skills={skills} />
-      <Projects />
+      <Projects projects={projects} />
       <Interests />
       <Slider sliderItems={sliderItems} />
       <Contact />
