@@ -1,13 +1,13 @@
 #contact{
-    width: 100%;
     padding: 5rem 0;
-    justify-content: center;
+    margin: 5% 0.8rem auto;
 }
 
 .contact-box{
     background-color:#22577A;
-    box-shadow: 10px 10px 2px 1px #193B51;
-    border-radius: 125px;
+    /* box-shadow: 10px 10px 2px 1px #193B51; */
+    box-shadow: 0px 8px 8px 2px #193B51;
+    border-radius: 75px;
 }
 
 .contact-title{
