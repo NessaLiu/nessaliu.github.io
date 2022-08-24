@@ -1,5 +1,8 @@
 import "./skillsTag.css";
 import React from "react";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+
 import { HiCheck } from "react-icons/hi";
 
 const SkillsTag = ({ skill }) => {

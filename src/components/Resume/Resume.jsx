@@ -25,14 +25,15 @@ const Resume = () => {
       .from(titleRef.current, {
         duration: 1,
         autoAlpha: 0,
-        y: 50,
+        y: 30,
       })
       .from(
         btnRef.current,
         {
-          duration: 1,
+          duration: 0.5,
           autoAlpha: 0,
-          y: 50,
+          y: 20,
+          ease: "power1.out",
         },
         "<+=0.5"
       );
