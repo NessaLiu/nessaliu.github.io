@@ -34,16 +34,15 @@ const Slider = (props) => {
     <div className="sliderWrapper">
       <Swiper
         modules={[Pagination]}
-        spaceBetween={20}
+        spaceBetween={0}
         slidesPerView={1}
         pagination={{ clickable: true }}
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={(swiper) => console.log(swiper)}
       >
         {sliderItems.map((slideItem) => {
-          console.log(slideItem.imgLink);
           return (
-            <SwiperSlide className="slide" key={slideItem.key}>
+            <SwiperSlide className="slideGallery" key={slideItem.key}>
               <img src={slideItem.imgLink} alt={slideItem.title} />
             </SwiperSlide>
           );

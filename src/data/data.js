@@ -47,11 +47,12 @@ export const projects = {
     featured: [
         {key: 0, projectName: "'Finn' Finance Bot", projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", projectLink: "https://github.com/Finn-Discord-Bot/finn"},
         {key: 1, projectName: "Finn", projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", projectLink: ""}],
+    transitionText: "check out the rest:",
     projects: [
-        {key: 0, projectName: "'Finn' Finance Bot", projectDesc: "", projectLink: ""},
-        {key: 1, projectName: "Finn", projectDesc: "", projectLink: ""},
-        {key: 2, projectName: "Finn", projectDesc: "", projectLink: ""},
-        {key: 3, projectName: "Finn", projectDesc: "", projectLink: ""}
+        {key: 0, projectName: "Project 1", projectDesc: "", projectLink: ""},
+        {key: 1, projectName: "Project 2", projectDesc: "", projectLink: ""},
+        {key: 2, projectName: "Project 3", projectDesc: "", projectLink: ""},
+        {key: 3, projectName: "Project 4", projectDesc: "", projectLink: ""}
     ],
     linkText: "LET'S GO"
 }

@@ -30,6 +30,8 @@
     padding: 2rem 1rem;
 }
 
+/* ================================ FEATURED SECTION ================================ */
+
 .featuredProjectContainer {
     position: relative;
     margin-bottom: 3rem;
@@ -67,6 +69,7 @@
 .featuredProjectDesc {
     font-size: 0.75rem;
 }
+/* ================================ GENERAL PROJECT TEXT STYLING ================================ */
 
 .projectTitle{
     font-size: 1.75rem;
@@ -90,7 +93,46 @@
     font-size:0.8rem;
 }
 
+/* ================================ SLIDER STYLING ================================ */
 
+.outerProjectSliderContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projectsSliderContainer {
+    /* margin: 0.5rem 0.25rem 5rem; */
+    text-align: center;
+    width: 80%;
+}
+
+.transitionText {
+    color: #fff;
+    text-transform: lowercase;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+.slideProjects {
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.projectCard {
+    width: 275px;
+    height: 275px;
+    border-radius: 1rem;
+    background-color: #4CB286;
+    text-align: left;
+}
+
+/* ================================ RESPONSIVENESS ================================ */
 @media (min-width: 768px) {
     #projects {
         margin: 3rem 2.2rem;
