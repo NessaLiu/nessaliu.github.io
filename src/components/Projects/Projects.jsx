@@ -68,11 +68,24 @@ const Projects = ({ projects }) => {
                 {projects.linkText}
               </a>
             </div>
-            <div className="featureBg">
+            <div className="featureBg featOneBg">
               <img src={blobBackground} className="backgroundBlob" />
             </div>
           </div>
           <div className="featuredProjectContainer">
+            <div className="featuredTextContainer featTwo">
+              <p className="featuredTitle">{projects.featuredTitle}</p>
+              <p className="projectTitle">{featuredProjTwo.projectName}</p>
+              <p className="projectDesc">{featuredProjTwo.projectDesc}</p>
+              <a className="projectLink" href={featuredProjTwo.projectLink}>
+                {projects.linkText}
+              </a>
+            </div>
+            <div className="featureBg featTwoBg">
+              <img src={blobBackground} className="backgroundBlob" />
+            </div>
+          </div>
+          {/* <div className="featuredProjectContainer">
             <img src={blobBackground} className="backgroundBlob" />
             <div className="featuredTextContainer featTwo">
               <p className="featuredTitle">{projects.featuredTitle}</p>
@@ -82,7 +95,7 @@ const Projects = ({ projects }) => {
                 {projects.linkText}
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

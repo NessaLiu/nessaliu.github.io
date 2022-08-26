@@ -72,9 +72,9 @@ p {
     color: #BAFBFC;    
 }
 
-@media (min-width: 780px) {
-    .interests-container {
-        margin: 3rem;
+@media (min-width: 768px) {
+    #interests {
+        margin: 3rem 2.2rem;
     }
 }
 

@@ -32,15 +32,11 @@
 
 .featuredProjectContainer {
     position: relative;
+    margin-bottom: 3rem;
 }
 
-.featureBg {
-    top: 0;
-    left: 0;
-}
-
-.blobBackground {
-    
+.featTwoBg {
+    transform: scaleX(-1);
 }
 
 .featuredContainer {
@@ -50,16 +46,16 @@
 .featuredTextContainer {
     text-align: left;
     width: 60%;
-    margin: 5rem auto;
     z-index:100;
+    position: absolute;
 }
 
-/* .featOne {
-    transform: translateY(-145%);
+.featOne {
+    transform: translateX(4rem) translateY(3.5rem);
 }
 .featTwo {
-    transform: translateY(-148%);
-} */
+    transform: translateX(5.5rem) translateY(4rem);
+}
 
 .featuredTitle {
     font-weight: bold;
@@ -95,9 +91,9 @@
 }
 
 
-@media (min-width: 780px) {
+@media (min-width: 768px) {
     #projects {
-        margin: 3rem;
+        margin: 3rem 2.2rem;
     }
     .projects-title{
         text-align: left;
