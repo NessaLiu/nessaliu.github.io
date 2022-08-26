@@ -6,7 +6,7 @@
 #projects {
     height: auto;
     max-width:auto;
-    margin: 5rem 0.8rem auto;
+    margin: 5rem 1rem;
     display: flex;
     justify-content:center;
 }
