@@ -88,15 +88,6 @@
     position: absolute;
 }
 
-.featCoverOne {
-    top: 8rem;
-    right: 4rem;
-}
-
-.featCoverTwo {
-    top: 8rem;
-    left: 4rem;
-}
 /* ================================ GENERAL PROJECT TEXT STYLING ================================ */
 
 .projectTitle{
@@ -183,38 +174,41 @@
         text-align: left;
         padding-left: 2rem;
     }
-    /* .project-block, .horizontal-block {
-        padding: 2rem;
+    .featuredProjectContainer {
+        margin-bottom: 0;
     }
-    .horizontal-block {
-        padding-bottom: 8rem;
-    } */
     .featureBg {
         width: 90%;
     }
-
     .featOneBg {
         transform: scale(0.8) translateX(-25%);
     }
-
     .featTwoBg {
         transform: scaleX(-1) scale(0.8) translateX(-40%);
     }
 
-    .featCoverContainer {
-        display: block;
-    }
-
+    /* text positioning */
     .featuredTextContainer {
         width: 35%;
     }
-
     .featOne {
         transform: translateX(4rem) translateY(8rem);
     }
-
     .featTwo {
         transform: translateX(25rem) translateY(10rem);
+    }
+
+    /* cover pic positioning */
+    .featCoverContainer {
+        display: block;
+    }
+    .featCoverOne {
+        top: 8rem;
+        right: 4rem;
+    }
+    .featCoverTwo {
+        top: 8rem;
+        left: 4rem;
     }
 } 
 
@@ -225,6 +219,40 @@
     }
     .project-desc{
         font-size: 1.25rem;
+    }
+
+    .featuredProjectContainer {
+        height: 600px;
+    }
+    .featOneBg {
+        transform: scale(0.6) translateX(-20%) translateY(-20%);
+    }
+    .featTwoBg {
+        transform: scaleX(-1) scale(0.6) translateX(-35%) translateY(-20%);
+    }
+
+    /* text positioning */
+    .featuredTextContainer {
+        width: 30%;
+    }
+    .featOne {
+        transform: translateX(10rem) translateY(10rem);
+    }
+    .featTwo {
+        transform: translateX(30rem) translateY(10rem);
+    }
+
+    /* cover pic positioning */
+    .featCoverContainer {
+        display: block;
+    }
+    .featCoverOne {
+        top: 8rem;
+        right: 7rem;
+    }
+    .featCoverTwo {
+        top: 8rem;
+        left: 7rem;
     }
 }
 
