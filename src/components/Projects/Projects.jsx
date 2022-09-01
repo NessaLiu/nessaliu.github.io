@@ -2,6 +2,7 @@ import "./projects.css";
 import { useEffect, useState, useRef } from "react";
 import gsap from "gsap";
 import blobBackground from "../../images/green-blob.svg";
+import fullBlobBackground from "../../images/blob-full.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
 import "swiper/css";
@@ -110,9 +111,13 @@ const Projects = ({ projects }) => {
               </a>
             </div>
             <div className="featureBg featOneBg">
-              <img src={blobBackground} className="backgroundBlob" />
+              <img src={fullBlobBackground} className="backgroundBlob" />
+            </div>
+            <div className="featCoverContainer featCoverOne">
+              <img src="" className="" />
             </div>
           </div>
+
           <div className="featuredProjectContainer">
             <div className="featuredTextContainer featTwo">
               <p className="featuredTitle">{projects.featuredTitle}</p>
@@ -123,7 +128,10 @@ const Projects = ({ projects }) => {
               </a>
             </div>
             <div className="featureBg featTwoBg">
-              <img src={blobBackground} className="backgroundBlob" />
+              <img src={fullBlobBackground} className="backgroundBlob" />
+            </div>
+            <div className="featCoverContainer featCoverTwo">
+              <img src="" className="" />
             </div>
           </div>
         </div>

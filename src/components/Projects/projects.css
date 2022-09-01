@@ -35,10 +35,22 @@
 .featuredProjectContainer {
     position: relative;
     margin-bottom: 3rem;
+    overflow: hidden;
+}
+
+.featureBg {
+    /* transform: scale(1.25); */
+    width: 125%;
+    overflow: hidden;
+}
+
+.featOneBg {
+    transform: translateX(-50px);
 }
 
 .featTwoBg {
     transform: scaleX(-1);
+    transform: translateX(-50px);
 }
 
 .featuredContainer {
@@ -52,11 +64,8 @@
     position: absolute;
 }
 
-.featOne {
+.featOne, .featTwo {
     transform: translateX(4rem) translateY(3.5rem);
-}
-.featTwo {
-    transform: translateX(5.5rem) translateY(4rem);
 }
 
 .featuredTitle {
@@ -68,6 +77,25 @@
 
 .featuredProjectDesc {
     font-size: 0.75rem;
+}
+
+.featCoverContainer {
+    display: none;
+    width: 295px;
+    height: 295px;
+    background-color: #000;
+    border-radius: 60px;
+    position: absolute;
+}
+
+.featCoverOne {
+    top: 8rem;
+    right: 4rem;
+}
+
+.featCoverTwo {
+    top: 8rem;
+    left: 4rem;
 }
 /* ================================ GENERAL PROJECT TEXT STYLING ================================ */
 
@@ -133,6 +161,20 @@
 }
 
 /* ================================ RESPONSIVENESS ================================ */
+
+/* @media (min-width: 500px) {
+    .featuredProjectContainer {
+        width: 60%;
+        overflow: visible;
+    }
+
+    .backgroundBlob {
+        width: 100%;
+    }
+}
+*/
+
+
 @media (min-width: 768px) {
     #projects {
         margin: 3rem 2.2rem;
@@ -141,13 +183,41 @@
         text-align: left;
         padding-left: 2rem;
     }
-    .project-block, .horizontal-block {
+    /* .project-block, .horizontal-block {
         padding: 2rem;
     }
     .horizontal-block {
         padding-bottom: 8rem;
+    } */
+    .featureBg {
+        width: 90%;
     }
-}
+
+    .featOneBg {
+        transform: scale(0.8) translateX(-25%);
+    }
+
+    .featTwoBg {
+        transform: scaleX(-1) scale(0.8) translateX(-40%);
+    }
+
+    .featCoverContainer {
+        display: block;
+    }
+
+    .featuredTextContainer {
+        width: 35%;
+    }
+
+    .featOne {
+        transform: translateX(4rem) translateY(8rem);
+    }
+
+    .featTwo {
+        transform: translateX(25rem) translateY(10rem);
+    }
+} 
+
 
 @media (min-width: 1024px) {
     .projects-title{
