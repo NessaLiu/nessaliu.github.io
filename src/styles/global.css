@@ -1,4 +1,8 @@
 
+.swiper-pagination {
+    transform: translateY(-3rem);
+}
+
 .swiper-pagination-bullet {
     background-color: #29483A;
 }
@@ -39,7 +43,7 @@
 
 .slideProjects {
     margin: 0;
-    padding: 3rem 0 5rem;
+    padding: 3rem 0 7rem;
     width: 275px;
     /* height: 100%; */
 }

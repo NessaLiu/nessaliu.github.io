@@ -284,6 +284,15 @@
     }
 }
 
+@media (min-width: 1153px) {
+    .featOneBg {
+        transform: scale(0.5) translateX(-30%) translateY(-35%);
+    }
+    .featTwoBg {
+        transform: scaleX(-1) scale(0.5) translateX(-35%) translateY(-35%);
+    }
+}
+
 @media (min-width: 1440px) {
     #projects {
         margin: 5rem;
