@@ -243,9 +243,6 @@
     }
 
     /* cover pic positioning */
-    .featCoverContainer {
-        display: block;
-    }
     .featCoverOne {
         top: 8rem;
         right: 7rem;
@@ -260,13 +257,38 @@
     #projects {
         margin: 5rem;
     }
-    .projects-columns {
-        display: flex;
-        flex-direction: row;
-    }
     .project-desc{
         font-size: 1.25rem;
     }
+    .featuredProjectContainer {
+        height: 800px;
+    }
+    .featOneBg {
+        transform: scale(0.6) translateX(-5%) translateY(-20%);
+    }
+    .featTwoBg {
+        transform: scaleX(-1) scale(0.6) translateX(-25%) translateY(-20%);
+    }
 
+    /* text positioning */
+    .featuredTextContainer {
+        width: 30%;
+    }
+    .featOne {
+        transform: translateX(20rem) translateY(15rem);
+    }
+    .featTwo {
+        transform: translateX(37rem) translateY(15rem);
+    }
+
+    /* cover pic positioning */
+    .featCoverOne {
+        top: 12rem;
+        right: 13rem;
+    }
+    .featCoverTwo {
+        top: 12rem;
+        left: 13rem;
+    }
 }
 
