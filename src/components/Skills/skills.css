@@ -7,7 +7,7 @@
 #skills {
     height: auto;
     max-width:auto;
-    margin: 5rem 0.8rem auto;
+    margin: 5rem 1rem;
     display: flex;
     justify-content:center;
 }
@@ -68,9 +68,9 @@
     display: inline-block;
 }
 
-@media (min-width: 780px) {
+@media (min-width: 768px) {
     #skills {
-        margin: 3rem;
+        margin: 3rem 2.2rem;
     }
     .skillsContentContainer {
         flex-direction: row;

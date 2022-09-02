@@ -1,14 +1,59 @@
 import "./projects.css";
-import { useEffect, useRef } from "react";
+import { useEffect, useState, useRef } from "react";
 import gsap from "gsap";
+import blobBackground from "../../images/green-blob.svg";
+import fullBlobBackground from "../../images/blob-full.svg";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper";
+import "swiper/css";
+import "swiper/css/pagination";
 
-const Projects = () => {
+const Projects = ({ projects }) => {
+  const mobileThreshold = 700;
+  const desktopThreshold = 1440;
+  const isMobileInitial = window.innerWidth <= mobileThreshold;
+  const [isMobile, setIsMobile] = useState(isMobileInitial);
+  const isDesktopInitial = window.innerWidth >= desktopThreshold;
+  const [isDesktop, setIsDesktop] = useState(isDesktopInitial);
+  const numMobileCards = 1;
+  const numTabletCards = 2;
+  const numDesktopCards = 3;
+
+  const featuredProjOne = projects.featured[0];
+  const featuredProjTwo = projects.featured[1];
+  const sliderItems = projects.projects;
+
   const containerRef = useRef(null);
   const titleRef = useRef(null);
   const section1Ref = useRef(null);
   const section2Ref = useRef(null);
   const section3Ref = useRef(null);
   const section4Ref = useRef(null);
+
+  function updateScreenStatus() {
+    if (window.innerWidth <= mobileThreshold) {
+      setIsMobile(true);
+      setIsDesktop(false);
+    } else if (window.innerWidth >= desktopThreshold) {
+      setIsDesktop(true);
+      setIsMobile(false);
+    } else {
+      setIsDesktop(false);
+      setIsMobile(false);
+    }
+  }
+
+  function numberSlidesShown() {
+    if (isMobile) {
+      return numMobileCards;
+    } else if (isDesktop) {
+      return numDesktopCards;
+    } else {
+      return numTabletCards;
+    }
+  }
+
+  window.addEventListener("resize", updateScreenStatus);
 
   useEffect(() => {
     let tl = gsap.timeline({
@@ -17,153 +62,143 @@ const Projects = () => {
       },
     });
 
-    tl.from(containerRef.current, {
-      duration: 0.5,
-      autoAlpha: 0,
-      scale: 0.8,
-    })
-      .from(
-        titleRef.current,
-        {
-          duration: 1,
-          autoAlpha: 0,
-          y: 50,
-        },
-        0.5
-      )
-      .from(
-        [
-          section1Ref.current,
-          section2Ref.current,
-          section3Ref.current,
-          section4Ref.current,
-        ],
-        {
-          duration: 0.5,
-          autoAlpha: 0,
-          y: 50,
-          stagger: 0.25,
-        },
-        "<+=0.5"
-      );
+    // tl.from(containerRef.current, {
+    //   duration: 0.5,
+    //   autoAlpha: 0,
+    //   scale: 0.8,
+    // })
+    //   .from(
+    //     titleRef.current,
+    //     {
+    //       duration: 1,
+    //       autoAlpha: 0,
+    //       y: 50,
+    //     },
+    //     0.5
+    //   )
+    //   .from(
+    //     [
+    //       section1Ref.current,
+    //       section2Ref.current,
+    //       section3Ref.current,
+    //       section4Ref.current,
+    //     ],
+    //     {
+    //       duration: 0.5,
+    //       autoAlpha: 0,
+    //       y: 50,
+    //       stagger: 0.25,
+    //     },
+    //     "<+=0.5"
+    //   );
   }, []);
 
   return (
     <section id="projects">
-      <div ref={containerRef} className="projects-box">
-        <h1 ref={titleRef} className="projects-title">
-          projects
+      <div ref={containerRef} className="projectsBox">
+        <h1 ref={titleRef} className="projectsTitle">
+          {projects.title}
         </h1>
 
-        <div className="projects-columns">
-          <div ref={section1Ref} className="project-block">
-            <h2 className="project-name">"Finn" Finance Bot</h2>
-            <p className="project-desc">
-              During the past winter break of 2021, I joined the 2-day online
-              hackathon "Hacky Winterland", hosted by MLH (Major League
-              Hacking). With a team of 10 peers from CFM, we developed an
-              all-in-one financial Discord bot, incorporating a festive theme to
-              keep up the holiday spirits! The vision for Finn was to help
-              individuals of all backgrounds to improve financial literacy and
-              smoothen the learning curve by providing a variety of features.
-              Our bot accessed Yahoo Finance's python library to extract
-              information and display an abundance of statistics to aid
-              investors in making financial decisions. Finn can also
-              algorithmically put together a portfolio depending on the type
-              needed using an input of stock tickers! Check Finn out{" "}
-              <a href="https://github.com/Finn-Discord-Bot" target="_blank">
-                {" "}
-                here
-              </a>
-              !
-            </p>
-          </div>
-
-          <div ref={section2Ref} className="project-block">
-            <h2 className="project-name">
-              "Vantoria"
-              <br />
-              Entertainment Bot
-            </h2>
-            <p className="project-desc">
-              Another exciting project I had the opportunity to work on was an
-              entertainment Discord bot, designed and created with my friend! In
-              order to study databases using MySQL, we incorporated several
-              profile commands which all accessed a database with the stored
-              data to create, edit, view and delete entries. To dive deeper into
-              the many possibilities of this creative project, we used
-              BeautifulSoup to webscrape quotes and deliver category-specific
-              content depending on a user's reaction to a outputted command
-              message. A simple and clear help menu describes all the commands
-              one can use, with a "Games" section featuring 3 minigames, a
-              "Profile" section and a "Self-care" section as well. With careful
-              thought put into the aesthetic and added convenience with slash
-              commands, we were proud to launch the bot after several weeks of
-              diligent hard work! See what else Vantoria has to offer{" "}
-              <a href="https://github.com/NessaLiu/VantoriaBot" target="_blank">
-                {" "}
-                here
-              </a>
-              !
-            </p>
-          </div>
-
-          <div ref={section3Ref} className="project-block">
-            <h2 className="project-name">
-              Safe Portfolio
-              <br /> Generator
-            </h2>
-            <p className="project-desc">
-              I worked with two group members to create a Python program in
-              Jupyter Notebook which takes in a CSV file of tickers and goes
-              through a filtering process using several calculations and
-              libraries like Yahoo Finance, NumPy Financial, Matplotlib and
-              more. Numerical, graphical and thorough written analysis were
-              implemented within, as well as reasonings to why the chosen
-              calculations of risk were used and how it affects the selection
-              process. Ultimately, it generates a list of 10-20 tickers that
-              would generate the safest portfolio based on measures such as
-              standard deviation, beta, correlation, and so on. Check out the
-              complete tested file{" "}
+        <div className="featuredContainer">
+          <div className="featuredProjectContainer">
+            <div className="featuredTextContainer featOne">
+              <p className="featuredTitle">{projects.featuredTitle}</p>
+              <p className="projectTitle">{featuredProjOne.projectName}</p>
+              <p className="projectDesc">{featuredProjOne.projectDesc}</p>
               <a
-                href="https://github.com/NessaLiu/SafePortfolioMaker"
+                className="projectLink"
+                href={featuredProjOne.projectLink}
                 target="_blank"
               >
-                {" "}
-                here
+                {projects.linkText}
               </a>
-              !
-            </p>
+            </div>
+            <div className="featureBg featOneBg">
+              <img src={fullBlobBackground} className="backgroundBlob" />
+            </div>
+            {/* <div className="featCoverContainer featCoverOne">
+              <img src={featuredProjOne.imgLink} className="" />
+            </div> */}
+            <img
+              className="featCoverContainer featCoverOne"
+              src={featuredProjOne.imgLink}
+            />
+          </div>
+
+          <div className="featuredProjectContainer">
+            <div className="featuredTextContainer featTwo">
+              <p className="featuredTitle">{projects.featuredTitle}</p>
+              <p className="projectTitle">{featuredProjTwo.projectName}</p>
+              <p className="projectDesc">{featuredProjTwo.projectDesc}</p>
+              <a
+                className="projectLink"
+                href={featuredProjTwo.projectLink}
+                target="_blank"
+              >
+                {projects.linkText}
+              </a>
+            </div>
+            <div className="featureBg featTwoBg">
+              <img src={fullBlobBackground} className="backgroundBlob" />
+            </div>
+            {/* <div className="featCoverContainer featCoverTwo">
+              <img src={featuredProjTwo.imgLink} className="" />
+            </div> */}
+            <img
+              className="featCoverContainer featCoverTwo"
+              src={featuredProjTwo.imgLink}
+            />
           </div>
         </div>
 
-        <div ref={section4Ref} className="horizontal-block">
-          <h2 className="project-name">Summer Showdown Platform Game</h2>
-          <p className="project-desc">
-            For the final culminating assignment for ICS4U Grade 12 Computer
-            Science, we were given the task to study independently and be
-            creative with developing a small project. Whether it be a website,
-            app, browser extension, or game, we were free to explore any area
-            that blossomed interest. Hence, to compliment my love for games, I
-            decided to research PyGame and the various possibilities of
-            entertainment forms I could create. I ended up choosing to code a
-            single-player platform game with a scrolling background, influenced
-            by the nostalgic games I used to play in my childhood. This "Summer
-            Showdown" game uses object-oriented programming to implement running
-            and jumping, a level system, health status, item collection, music
-            and sound effects. There were also enemy AI which the user could
-            attack and also receive damage from. It was a great learning
-            experience and being able to successfully produce a functioning game
-            was extremely rewarding! Take a look at the game{" "}
-            <a
-              href="https://github.com/NessaLiu/SummerShowdownPlatformGame"
-              target="_blank"
+        <div className="outerProjectSliderContainer">
+          <div className="projectsSliderContainer">
+            <span className="transitionText">{projects.transitionText}</span>
+            <Swiper
+              modules={[Pagination]}
+              spaceBetween={20}
+              // slidesPerView={isMobile ? 1 : 2}
+              slidesPerView={numberSlidesShown()}
+              pagination={{ clickable: true }}
+              onSwiper={(swiper) => console.log(swiper)}
+              onSlideChange={(swiper) => console.log(swiper)}
             >
-              {" "}
-              here
-            </a>
-            !
-          </p>
+              {sliderItems.map((slideItem) => {
+                return (
+                  // <SwiperSlide className="slideProjects" key={slideItem.key}>
+                  //   <div className="projectCard">
+                  //     <p className="projectTitle">{slideItem.projectName}</p>
+                  //     <a className="projectLink" href={slideItem.projectLink}>
+                  //       {projects.linkText}
+                  //     </a>
+                  //   </div>
+                  // </SwiperSlide>
+                  <SwiperSlide className="slideProjects" key={slideItem.key}>
+                    <a
+                      className="projectCard"
+                      href={slideItem.projectLink}
+                      target="_blank"
+                    >
+                      <div className="cardProjectHeader">
+                        <p className="projectTitle cardProjectTitle">
+                          {slideItem.projectName}
+                        </p>
+                        {/* <div className="projectCover">
+                          <img src={slideItem.imgLink} className="" />
+                        </div> */}
+                        <img className="projectCover" src={slideItem.imgLink} />
+                      </div>
+
+                      <p className="projectDesc cardProjectDesc">
+                        {slideItem.projectDesc}
+                      </p>
+                    </a>
+                  </SwiperSlide>
+                );
+              })}
+            </Swiper>
+          </div>
         </div>
       </div>
     </section>
