@@ -147,8 +147,18 @@
     width: 275px;
     height: 275px;
     border-radius: 1rem;
+    /* background-color: #4CB286; */
+    /* background: linear-gradient(to bottom, #4CB286, #3f8f6c); */
     background-color: #4CB286;
+    transition: background-color 0.75s ease-out;
     text-align: left;
+    opacity: 1;
+}
+
+
+.projectCard:hover {
+    background-color: #429772;
+    cursor: pointer;
 }
 
 .projectCard:link {
@@ -161,11 +171,12 @@
 }
 
 .cardProjectTitle {
-    padding: 27px 0px 27px 27px;
+    padding: 27px;
     /* width: 50%; */
-    font-size: 1.3rem;
+    font-size: 1rem;
     width: 75%;
 }
+
 
 .projectCover {
     height: 66px;
