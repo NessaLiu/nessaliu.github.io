@@ -49,10 +49,10 @@ export const projects = {
         {key: 1, projectName: "Finn", projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", projectLink: ""}],
     transitionText: "check out the rest:",
     projects: [
-        {key: 0, projectName: "Project 1", projectDesc: "", projectLink: ""},
-        {key: 1, projectName: "Project 2", projectDesc: "", projectLink: ""},
-        {key: 2, projectName: "Project 3", projectDesc: "", projectLink: ""},
-        {key: 3, projectName: "Project 4", projectDesc: "", projectLink: ""}
+        {key: 0, projectName: "Project project", projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", projectLink: ""},
+        {key: 1, projectName: "Project 2", projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", projectLink: ""},
+        {key: 2, projectName: "Project 3", projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", projectLink: ""},
+        {key: 3, projectName: "Project 4", projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", projectLink: ""}
     ],
     linkText: "LET'S GO"
 }

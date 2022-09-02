@@ -106,7 +106,11 @@ const Projects = ({ projects }) => {
               <p className="featuredTitle">{projects.featuredTitle}</p>
               <p className="projectTitle">{featuredProjOne.projectName}</p>
               <p className="projectDesc">{featuredProjOne.projectDesc}</p>
-              <a className="projectLink" href={featuredProjOne.projectLink}>
+              <a
+                className="projectLink"
+                href={featuredProjOne.projectLink}
+                target="_blank"
+              >
                 {projects.linkText}
               </a>
             </div>
@@ -123,7 +127,11 @@ const Projects = ({ projects }) => {
               <p className="featuredTitle">{projects.featuredTitle}</p>
               <p className="projectTitle">{featuredProjTwo.projectName}</p>
               <p className="projectDesc">{featuredProjTwo.projectDesc}</p>
-              <a className="projectLink" href={featuredProjTwo.projectLink}>
+              <a
+                className="projectLink"
+                href={featuredProjTwo.projectLink}
+                target="_blank"
+              >
                 {projects.linkText}
               </a>
             </div>
@@ -150,13 +158,31 @@ const Projects = ({ projects }) => {
             >
               {sliderItems.map((slideItem) => {
                 return (
+                  // <SwiperSlide className="slideProjects" key={slideItem.key}>
+                  //   <div className="projectCard">
+                  //     <p className="projectTitle">{slideItem.projectName}</p>
+                  //     <a className="projectLink" href={slideItem.projectLink}>
+                  //       {projects.linkText}
+                  //     </a>
+                  //   </div>
+                  // </SwiperSlide>
                   <SwiperSlide className="slideProjects" key={slideItem.key}>
-                    <div className="projectCard">
-                      <p>{slideItem.projectName}</p>
-                      <a className="projectLink" href={slideItem.projectLink}>
-                        {projects.linkText}
-                      </a>
-                    </div>
+                    <a
+                      className="projectCard"
+                      href={slideItem.projectLink}
+                      target="_blank"
+                    >
+                      <div className="cardProjectHeader">
+                        <p className="projectTitle cardProjectTitle">
+                          {slideItem.projectName}
+                        </p>
+                        <div className="projectCover"></div>
+                      </div>
+
+                      <p className="projectDesc cardProjectDesc">
+                        {slideItem.projectDesc}
+                      </p>
+                    </a>
                   </SwiperSlide>
                 );
               })}

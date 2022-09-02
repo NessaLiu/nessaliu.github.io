@@ -151,6 +151,37 @@
     text-align: left;
 }
 
+.projectCard:link {
+    text-decoration: none;
+}
+
+.cardProjectHeader {
+    /* width: 90%; */
+    display: flex;
+}
+
+.cardProjectTitle {
+    padding: 27px 0px 27px 27px;
+    /* width: 50%; */
+    font-size: 1.3rem;
+    width: 75%;
+}
+
+.projectCover {
+    height: 66px;
+    width: 66px;
+    border-radius: 6px;
+    background-color: #000;
+    transform: translateX(-27px) translateY(27px);
+}
+
+.cardProjectDesc {
+    position: absolute;
+    width: 275px;
+    padding: 0px 27px;
+    top: 155px;
+}
+
 /* ================================ RESPONSIVENESS ================================ */
 
 /* @media (min-width: 500px) {
