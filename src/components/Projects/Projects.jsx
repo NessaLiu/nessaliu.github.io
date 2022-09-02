@@ -117,9 +117,13 @@ const Projects = ({ projects }) => {
             <div className="featureBg featOneBg">
               <img src={fullBlobBackground} className="backgroundBlob" />
             </div>
-            <div className="featCoverContainer featCoverOne">
-              <img src="" className="" />
-            </div>
+            {/* <div className="featCoverContainer featCoverOne">
+              <img src={featuredProjOne.imgLink} className="" />
+            </div> */}
+            <img
+              className="featCoverContainer featCoverOne"
+              src={featuredProjOne.imgLink}
+            />
           </div>
 
           <div className="featuredProjectContainer">
@@ -138,9 +142,13 @@ const Projects = ({ projects }) => {
             <div className="featureBg featTwoBg">
               <img src={fullBlobBackground} className="backgroundBlob" />
             </div>
-            <div className="featCoverContainer featCoverTwo">
-              <img src="" className="" />
-            </div>
+            {/* <div className="featCoverContainer featCoverTwo">
+              <img src={featuredProjTwo.imgLink} className="" />
+            </div> */}
+            <img
+              className="featCoverContainer featCoverTwo"
+              src={featuredProjTwo.imgLink}
+            />
           </div>
         </div>
 
@@ -176,7 +184,10 @@ const Projects = ({ projects }) => {
                         <p className="projectTitle cardProjectTitle">
                           {slideItem.projectName}
                         </p>
-                        <div className="projectCover"></div>
+                        {/* <div className="projectCover">
+                          <img src={slideItem.imgLink} className="" />
+                        </div> */}
+                        <img className="projectCover" src={slideItem.imgLink} />
                       </div>
 
                       <p className="projectDesc cardProjectDesc">

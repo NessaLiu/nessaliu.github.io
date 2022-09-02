@@ -83,9 +83,9 @@
     display: none;
     width: 295px;
     height: 295px;
-    background-color: #000;
     border-radius: 60px;
     position: absolute;
+    object-fit: cover;
 }
 
 /* ================================ GENERAL PROJECT TEXT STYLING ================================ */
@@ -145,7 +145,7 @@
 
 .projectCard {
     width: 275px;
-    height: 275px;
+    height: 500px;
     border-radius: 1rem;
     /* background-color: #4CB286; */
     /* background: linear-gradient(to bottom, #4CB286, #3f8f6c); */
@@ -182,8 +182,9 @@
     height: 66px;
     width: 66px;
     border-radius: 6px;
-    background-color: #000;
+    /* background-color: #000; */
     transform: translateX(-27px) translateY(27px);
+    object-fit: cover;
 }
 
 .cardProjectDesc {
