@@ -1,4 +1,4 @@
 # Vanessa Liu's Personal Website
 
-A work-in-progress project - my personal website! Experimenting with HTML, CSS, JavaScript and React!
+Welcome to my personal website! I've documented past projects and experiences I've worked on, while also playing around with front-end technologies :)
 
