@@ -50,7 +50,6 @@ const Skills = ({ skills }) => {
         langHeaderRef.current,
         {
           autoAlpha: 0,
-          //   y: 40,
           duration: 0.5,
         },
         0
@@ -77,7 +76,6 @@ const Skills = ({ skills }) => {
         toolsHeaderRef.current,
         {
           autoAlpha: 0,
-          //   y: 40,
           duration: 0.4,
         },
         0
@@ -92,23 +90,6 @@ const Skills = ({ skills }) => {
         },
         "<+=0.5"
       );
-
-    //   .from(langBoxRef.current, { autoAlpha: 0, duration: 1 }, 0)
-    //   .from(".langTag", {
-    //     duration: 0.5,
-    //     autoAlpha: 0,
-    //     y: 30,
-    //     stagger: 0.25,
-    //     ease: "elastic.out",
-    //   });
-    // gsap.from(".toolsTagComponentContainer", {
-    //   duration: 0.5,
-    //   autoAlpha: 0,
-    //   stagger: 0.25,
-    //   ease: "power1.in",
-    // });
-    // languages_tl.from();
-    // className={`skillTag${i}`}
   });
 
   return (
