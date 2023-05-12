@@ -61,6 +61,6 @@ export const skills = {
     title: "skills",
     subtitleOne: "languages",
     subtitleTwo: "tools + libraries",
-    languages: ["JavaScript", "HTML/CSS", "TypeScript", "C", "Python", "SQL"],
-    toolsAndLibraries: ["React", "Next.js", "Three.js", "GSAP", "Jupyter Notebook", "Git"]
+    languages: ["C++", "C", "Python", "Bash", "JavaScript", "HTML/CSS", "TypeScript", "SQL"],
+    toolsAndLibraries: ["Django", "Django REST", "Jest", "Pytest", "MySQL", "Redux", "React", "Next.js", "Three.js", "GSAP", "Git"]
 }

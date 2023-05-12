@@ -65,13 +65,13 @@ const Intro = () => {
           </h1>
           <p ref={descRef} className="about-me-content">
             Hey there! Nice to meet you :) My name is Vanessa Liu and I'm
-            currently a first year student at the University of Waterloo
+            currently a second year student at the University of Waterloo
             enrolled in the Computer Science program on co-op term. I had the
             opportunity to explore several courses including math, computer
             science, and finance! Having just completed my first two study
             terms, I can say it was definitely a new experience. Overall, I'm
             grateful to have gained new knowledge and built fresh connections
-            with others. I look forward to second year!
+            with others. I look forward to the opportunities to come!
           </p>
         </div>
       </div>
