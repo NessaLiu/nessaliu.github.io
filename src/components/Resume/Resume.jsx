@@ -1,5 +1,5 @@
 import "./resume.css";
-import ResumePDF from "../../files/final_resume.pdf";
+import ResumePDF from "../../files/RESUME_SPRING_2023_2B.pdf";
 import ResumeBtn from "../../images/resume-button.svg";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
